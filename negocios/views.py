@@ -1,3 +1,6 @@
 from django.shortcuts import render
+from django.views.generic.list import ListView
+from negocios.models import Negocio
 
-# Create your views here.
+class NegocioListView(ListView):
+    model = Negocio
